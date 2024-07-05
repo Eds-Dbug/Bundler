@@ -24,5 +24,11 @@ module.exports = {
     },
     plugins: [
         new BundleAnalyzerPlugin()
-    ]
+    ],
+    devServer: {
+        static: {
+            directory: path.join(__dirname, 'public')
+        },
+        port: 9000
+    }
   };
